@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TramontiniSciacaluga_GestorAlumnos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4cc69d7760c3622ff708a61d2ccbc18b74adde1c")]
 [assembly: System.Reflection.AssemblyProductAttribute("TramontiniSciacaluga_GestorAlumnos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TramontiniSciacaluga_GestorAlumnos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

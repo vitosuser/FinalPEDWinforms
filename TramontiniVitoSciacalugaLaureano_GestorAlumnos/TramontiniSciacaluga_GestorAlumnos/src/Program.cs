@@ -1,4 +1,4 @@
-namespace TramontiniSciacaluga_GestorAlumnos
+namespace TramontiniSciacaluga_GestorAlumnos.src
 {
     internal static class Program
     {

@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\Desktop\\TramontiniVitoSciacalugaLaureano_GestorAlumnos\\TramontiniVitoSciacalugaLaureano_GestorAlumnos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5599558E-F557-4606-A5A1-3264D59258A5}|TramontiniSciacaluga_GestorAlumnos\\TramontiniSciacaluga_GestorAlumnos.csproj|c:\\users\\usuario\\desktop\\tramontinivitosciacalugalaureano_gestoralumnos\\tramontinivitosciacalugalaureano_gestoralumnos\\tramontinisciacaluga_gestoralumnos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5599558E-F557-4606-A5A1-3264D59258A5}|TramontiniSciacaluga_GestorAlumnos\\TramontiniSciacaluga_GestorAlumnos.csproj|solutionrelative:tramontinisciacaluga_gestoralumnos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{5599558E-F557-4606-A5A1-3264D59258A5}|TramontiniSciacaluga_GestorAlumnos\\TramontiniSciacaluga_GestorAlumnos.csproj|c:\\users\\usuario\\desktop\\tramontinivitosciacalugalaureano_gestoralumnos\\tramontinivitosciacalugalaureano_gestoralumnos\\tramontinisciacaluga_gestoralumnos\\src\\gestorarchivos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5599558E-F557-4606-A5A1-3264D59258A5}|TramontiniSciacaluga_GestorAlumnos\\TramontiniSciacaluga_GestorAlumnos.csproj|solutionrelative:tramontinisciacaluga_gestoralumnos\\src\\gestorarchivos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5599558E-F557-4606-A5A1-3264D59258A5}|TramontiniSciacaluga_GestorAlumnos\\TramontiniSciacaluga_GestorAlumnos.csproj|c:\\users\\usuario\\desktop\\tramontinivitosciacalugalaureano_gestoralumnos\\tramontinivitosciacalugalaureano_gestoralumnos\\tramontinisciacaluga_gestoralumnos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5599558E-F557-4606-A5A1-3264D59258A5}|TramontiniSciacaluga_GestorAlumnos\\TramontiniSciacaluga_GestorAlumnos.csproj|solutionrelative:tramontinisciacaluga_gestoralumnos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5599558E-F557-4606-A5A1-3264D59258A5}|TramontiniSciacaluga_GestorAlumnos\\TramontiniSciacaluga_GestorAlumnos.csproj|c:\\users\\usuario\\desktop\\tramontinivitosciacalugalaureano_gestoralumnos\\tramontinivitosciacalugalaureano_gestoralumnos\\tramontinisciacaluga_gestoralumnos\\src\\generadorreportes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5599558E-F557-4606-A5A1-3264D59258A5}|TramontiniSciacaluga_GestorAlumnos\\TramontiniSciacaluga_GestorAlumnos.csproj|solutionrelative:tramontinisciacaluga_gestoralumnos\\src\\generadorreportes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5599558E-F557-4606-A5A1-3264D59258A5}|TramontiniSciacaluga_GestorAlumnos\\TramontiniSciacaluga_GestorAlumnos.csproj|c:\\users\\usuario\\desktop\\tramontinivitosciacalugalaureano_gestoralumnos\\tramontinivitosciacalugalaureano_gestoralumnos\\tramontinisciacaluga_gestoralumnos\\src\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5599558E-F557-4606-A5A1-3264D59258A5}|TramontiniSciacaluga_GestorAlumnos\\TramontiniSciacaluga_GestorAlumnos.csproj|solutionrelative:tramontinisciacaluga_gestoralumnos\\src\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5599558E-F557-4606-A5A1-3264D59258A5}|TramontiniSciacaluga_GestorAlumnos\\TramontiniSciacaluga_GestorAlumnos.csproj|c:\\users\\usuario\\desktop\\tramontinivitosciacalugalaureano_gestoralumnos\\tramontinivitosciacalugalaureano_gestoralumnos\\tramontinisciacaluga_gestoralumnos\\src\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5599558E-F557-4606-A5A1-3264D59258A5}|TramontiniSciacaluga_GestorAlumnos\\TramontiniSciacaluga_GestorAlumnos.csproj|solutionrelative:tramontinisciacaluga_gestoralumnos\\src\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,30 +26,57 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GeneradorReportes.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\TramontiniVitoSciacalugaLaureano_GestorAlumnos\\TramontiniVitoSciacalugaLaureano_GestorAlumnos\\TramontiniSciacaluga_GestorAlumnos\\src\\GeneradorReportes.cs",
+              "RelativeDocumentMoniker": "TramontiniSciacaluga_GestorAlumnos\\src\\GeneradorReportes.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\TramontiniVitoSciacalugaLaureano_GestorAlumnos\\TramontiniVitoSciacalugaLaureano_GestorAlumnos\\TramontiniSciacaluga_GestorAlumnos\\src\\GeneradorReportes.cs",
+              "RelativeToolTip": "TramontiniSciacaluga_GestorAlumnos\\src\\GeneradorReportes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T23:46:11.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "GestorArchivos.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\TramontiniVitoSciacalugaLaureano_GestorAlumnos\\TramontiniVitoSciacalugaLaureano_GestorAlumnos\\TramontiniSciacaluga_GestorAlumnos\\src\\GestorArchivos.cs",
+              "RelativeDocumentMoniker": "TramontiniSciacaluga_GestorAlumnos\\src\\GestorArchivos.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\TramontiniVitoSciacalugaLaureano_GestorAlumnos\\TramontiniVitoSciacalugaLaureano_GestorAlumnos\\TramontiniSciacaluga_GestorAlumnos\\src\\GestorArchivos.cs",
+              "RelativeToolTip": "TramontiniSciacaluga_GestorAlumnos\\src\\GestorArchivos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T23:45:51.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\TramontiniVitoSciacalugaLaureano_GestorAlumnos\\TramontiniVitoSciacalugaLaureano_GestorAlumnos\\TramontiniSciacaluga_GestorAlumnos\\Form1.cs",
-              "RelativeDocumentMoniker": "TramontiniSciacaluga_GestorAlumnos\\Form1.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\TramontiniVitoSciacalugaLaureano_GestorAlumnos\\TramontiniVitoSciacalugaLaureano_GestorAlumnos\\TramontiniSciacaluga_GestorAlumnos\\Form1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "TramontiniSciacaluga_GestorAlumnos\\Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\TramontiniVitoSciacalugaLaureano_GestorAlumnos\\TramontiniVitoSciacalugaLaureano_GestorAlumnos\\TramontiniSciacaluga_GestorAlumnos\\src\\Form1.cs",
+              "RelativeDocumentMoniker": "TramontiniSciacaluga_GestorAlumnos\\src\\Form1.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\TramontiniVitoSciacalugaLaureano_GestorAlumnos\\TramontiniVitoSciacalugaLaureano_GestorAlumnos\\TramontiniSciacaluga_GestorAlumnos\\src\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "TramontiniSciacaluga_GestorAlumnos\\src\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-03T23:41:48.661Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\TramontiniVitoSciacalugaLaureano_GestorAlumnos\\TramontiniVitoSciacalugaLaureano_GestorAlumnos\\TramontiniSciacaluga_GestorAlumnos\\Program.cs",
-              "RelativeDocumentMoniker": "TramontiniSciacaluga_GestorAlumnos\\Program.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\TramontiniVitoSciacalugaLaureano_GestorAlumnos\\TramontiniVitoSciacalugaLaureano_GestorAlumnos\\TramontiniSciacaluga_GestorAlumnos\\Program.cs",
-              "RelativeToolTip": "TramontiniSciacaluga_GestorAlumnos\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\TramontiniVitoSciacalugaLaureano_GestorAlumnos\\TramontiniVitoSciacalugaLaureano_GestorAlumnos\\TramontiniSciacaluga_GestorAlumnos\\src\\Program.cs",
+              "RelativeDocumentMoniker": "TramontiniSciacaluga_GestorAlumnos\\src\\Program.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\TramontiniVitoSciacalugaLaureano_GestorAlumnos\\TramontiniVitoSciacalugaLaureano_GestorAlumnos\\TramontiniSciacaluga_GestorAlumnos\\src\\Program.cs",
+              "RelativeToolTip": "TramontiniSciacaluga_GestorAlumnos\\src\\Program.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T23:40:58.338Z"
+              "WhenOpened": "2025-12-03T23:40:58.338Z",
+              "EditorCaption": ""
             }
           ]
         }
