@@ -2,6 +2,7 @@ using System;
 using System.Drawing;
 using System.Windows.Forms;
 using TramontiniSciacaluga_GestorAlumnos.Models;
+using TramontiniSciacaluga_GestorAlumnos.src;
 
 namespace TramontiniSciacaluga_GestorAlumnos
 {
@@ -21,28 +22,28 @@ namespace TramontiniSciacaluga_GestorAlumnos
             this.IsMdiContainer = false;
         }
 
-        // ==========================================
-        //    EVENTOS DEL MENÚ (Conectados por el Designer)
-        // ==========================================
-
         private void crearNuevoArchivoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AbrirCrear();
+            FormCrear formCrear = new FormCrear();
+            formCrear.Show();
         }
 
         private void leerArchivoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AbrirLeer();
+            FormLeer formLeer = new FormLeer();
+            formLeer.Show();
         }
 
         private void modificarArchivoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AbrirModificar();
+            FormModificar formModif = new FormModificar();
+            formModif.Show();
         }
 
         private void eliminarArchivoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AccionEliminar();
+            FormEliminar formElim = new FormEliminar();
+            formElim.Show();
         }
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
@@ -52,52 +53,15 @@ namespace TramontiniSciacaluga_GestorAlumnos
 
         private void convertirFormatosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AccionConvertir();
+            FormConversor conversor = new FormConversor();
+            conversor.Show();
         }
 
         private void generarReporteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AccionReporte();
+            FormReportes reportes = new FormReportes();
+            reportes.Show();
         }
 
-        // ==========================================
-        //           LÓGICA DE NEGOCIO
-        // ==========================================
-
-        private void AbrirCrear()
-        {
-            // Abre el formulario de creación
-            FormCrear form = new FormCrear();
-            form.Show();
-        }
-
-        private void AbrirLeer()
-        {
-            // Abre el formulario de lectura
-            FormLeer form = new FormLeer();
-            form.Show();
-        }
-
-        private void AbrirModificar()
-        {
-            MessageBox.Show("Aquí se abrirá la ventana de MODIFICAR.\n(Necesitamos crear el FormModificar.cs)", "En construcción");
-        }
-
-        private void AccionEliminar()
-        {
-            // Usamos InputBox de VB.NET o un cuadro de diálogo simple si no tienes la referencia
-            // Para simplificar ahora, usamos un MessageBox simulado
-            MessageBox.Show("Funcionalidad pendiente: Eliminar Archivo", "En construcción");
-        }
-
-        private void AccionConvertir()
-        {
-            MessageBox.Show("Funcionalidad de conversión pendiente.", "En construcción");
-        }
-
-        private void AccionReporte()
-        {
-            MessageBox.Show("Funcionalidad de reporte pendiente.", "En construcción");
-        }
     }
 }

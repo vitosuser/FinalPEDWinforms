@@ -4,10 +4,22 @@
     <Compile Update="src\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="src\FormConversor.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="src\FormCrear.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="src\FormEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="src\FormLeer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="src\FormModificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="src\FormReportes.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
