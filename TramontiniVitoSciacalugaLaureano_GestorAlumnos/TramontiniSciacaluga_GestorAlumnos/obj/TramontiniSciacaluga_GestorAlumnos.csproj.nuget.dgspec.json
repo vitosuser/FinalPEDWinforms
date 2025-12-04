@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Desktop\\TramontiniVitoSciacalugaLaureano_GestorAlumnos\\TramontiniVitoSciacalugaLaureano_GestorAlumnos\\TramontiniSciacaluga_GestorAlumnos\\TramontiniSciacaluga_GestorAlumnos.csproj": {}
+    "C:\\Users\\lausc\\OneDrive\\Escritorio\\FinalPEDWinforms\\TramontiniVitoSciacalugaLaureano_GestorAlumnos\\TramontiniSciacaluga_GestorAlumnos\\TramontiniSciacaluga_GestorAlumnos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Desktop\\TramontiniVitoSciacalugaLaureano_GestorAlumnos\\TramontiniVitoSciacalugaLaureano_GestorAlumnos\\TramontiniSciacaluga_GestorAlumnos\\TramontiniSciacaluga_GestorAlumnos.csproj": {
+    "C:\\Users\\lausc\\OneDrive\\Escritorio\\FinalPEDWinforms\\TramontiniVitoSciacalugaLaureano_GestorAlumnos\\TramontiniSciacaluga_GestorAlumnos\\TramontiniSciacaluga_GestorAlumnos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\TramontiniVitoSciacalugaLaureano_GestorAlumnos\\TramontiniVitoSciacalugaLaureano_GestorAlumnos\\TramontiniSciacaluga_GestorAlumnos\\TramontiniSciacaluga_GestorAlumnos.csproj",
+        "projectUniqueName": "C:\\Users\\lausc\\OneDrive\\Escritorio\\FinalPEDWinforms\\TramontiniVitoSciacalugaLaureano_GestorAlumnos\\TramontiniSciacaluga_GestorAlumnos\\TramontiniSciacaluga_GestorAlumnos.csproj",
         "projectName": "TramontiniSciacaluga_GestorAlumnos",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\TramontiniVitoSciacalugaLaureano_GestorAlumnos\\TramontiniVitoSciacalugaLaureano_GestorAlumnos\\TramontiniSciacaluga_GestorAlumnos\\TramontiniSciacaluga_GestorAlumnos.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\TramontiniVitoSciacalugaLaureano_GestorAlumnos\\TramontiniVitoSciacalugaLaureano_GestorAlumnos\\TramontiniSciacaluga_GestorAlumnos\\obj\\",
+        "projectPath": "C:\\Users\\lausc\\OneDrive\\Escritorio\\FinalPEDWinforms\\TramontiniVitoSciacalugaLaureano_GestorAlumnos\\TramontiniSciacaluga_GestorAlumnos\\TramontiniSciacaluga_GestorAlumnos.csproj",
+        "packagesPath": "C:\\Users\\lausc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lausc\\OneDrive\\Escritorio\\FinalPEDWinforms\\TramontiniVitoSciacalugaLaureano_GestorAlumnos\\TramontiniSciacaluga_GestorAlumnos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lausc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -68,7 +68,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
