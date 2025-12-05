@@ -13,11 +13,9 @@ namespace TramontiniSciacaluga_GestorAlumnos
 
         public FormLeer()
         {
-            // Inicializa los componentes definidos en el Designer
             InitializeComponent();
         }
 
-        // --- EVENTO DEL BOTÓN BUSCAR (Conectado desde el Designer) ---
         private void BtnBuscar_Click(object sender, EventArgs e)
         {
             string nombre = txtNombreArchivo.Text;
@@ -55,7 +53,6 @@ namespace TramontiniSciacaluga_GestorAlumnos
             }
         }
 
-        // --- MÉTODOS AUXILIARES ---
         private void CargarGrilla(List<Alumno> lista)
         {
             // Limpiamos la fuente de datos anterior
