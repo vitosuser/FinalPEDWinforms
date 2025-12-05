@@ -20,13 +20,13 @@ namespace TramontiniSciacaluga_GestorAlumnos
             InitializeComponent();
         }
 
-        // --- 1. CARGAR ARCHIVO ---
         private void BtnCargar_Click(object sender, EventArgs e)
         {
             string nombre = txtArchivo.Text;
+
             if (!gestor.ValidarExistencia(nombre))
             {
-                MessageBox.Show("Archivo no encontrado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Archivo no encontrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -42,20 +42,19 @@ namespace TramontiniSciacaluga_GestorAlumnos
                 // Habilitamos controles
                 grpEdicion.Enabled = true;
                 btnGuardarTodo.Enabled = true;
-                MessageBox.Show($"Se cargaron {listaMemoria.Count} alumnos.", "Éxito");
+                MessageBox.Show($"Se cargaron {listaMemoria.Count} alumnos", "Éxito");
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al cargar: " + ex.Message);
+                MessageBox.Show("Error: " + ex.Message);
             }
         }
 
-        // --- 2. SELECCIÓN DE LA LISTA ---
         private void LstAlumnos_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (lstAlumnos.SelectedIndex != -1)
             {
-                // Cargamos los datos del alumno seleccionado en los TextBox
+                // Cargamos los datos del alumno seleccionado en los textbox
                 Alumno alu = listaMemoria[lstAlumnos.SelectedIndex];
                 txtLegajo.Text = alu.Legajo;
                 txtApellido.Text = alu.Apellido;
@@ -66,36 +65,50 @@ namespace TramontiniSciacaluga_GestorAlumnos
             }
         }
 
-        // --- 3. ACCIONES DE EDICIÓN ---
 
         private void BtnAgregarNuevo_Click(object sender, EventArgs e)
         {
-            if (!ValidarCampos()) return;
+            if (!ValidarCampos())
+            {
+                return;
 
-            // Validar Legajo único
+            }
+
+            // Validar legajo único
             if (listaMemoria.Any(a => a.Legajo == txtLegajo.Text))
             {
-                MessageBox.Show("Ya existe un alumno con ese Legajo.", "Error");
+                MessageBox.Show("Ya existe un alumno con ese legajo", "Error");
                 return;
             }
 
             Alumno nuevo = new Alumno(txtLegajo.Text, txtApellido.Text, txtNombre.Text, txtDoc.Text, txtEmail.Text, txtTel.Text);
             listaMemoria.Add(nuevo);
+
             ActualizarListaVisual();
             LimpiarCampos();
-            MessageBox.Show("Alumno agregado a la lista temporal.");
+
+            MessageBox.Show("Alumno agregado a la lista temporal");
         }
 
         private void BtnAplicarCambios_Click(object sender, EventArgs e)
         {
             int index = lstAlumnos.SelectedIndex;
-            if (index == -1) { MessageBox.Show("Seleccione un alumno de la lista para editar."); return; }
 
-            if (!ValidarCampos()) return;
+            if (index == -1) 
+            { 
+                MessageBox.Show("Seleccione un alumno de la lista para editar"); 
+                return; 
+            }
 
-            // Actualizamos el objeto en memoria
+            if (!ValidarCampos())
+            {
+                return;
+
+            }
+
+            // actualizamos el objeto en memoria
             Alumno alu = listaMemoria[index];
-            // Nota: Permitimos cambiar todo menos el ID si quisiéramos, pero aquí actualizamos todo
+
             alu.Legajo = txtLegajo.Text;
             alu.Apellido = txtApellido.Text;
             alu.Nombre = txtNombre.Text;
@@ -112,29 +125,36 @@ namespace TramontiniSciacaluga_GestorAlumnos
         private void BtnEliminar_Click(object sender, EventArgs e)
         {
             int index = lstAlumnos.SelectedIndex;
-            if (index == -1) { MessageBox.Show("Seleccione un alumno para eliminar."); return; }
 
-            var confirm = MessageBox.Show("¿Seguro desea eliminar este alumno?", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-            if (confirm == DialogResult.Yes)
+            if (index == -1) 
+            { 
+                MessageBox.Show("Seleccione un alumno para eliminar."); 
+                return;
+
+            }
+
+            var confirmar = MessageBox.Show("¿Seguro desea eliminar este alumno?", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            
+            if (confirmar == DialogResult.Yes)
             {
+                //eliminamos por indice
                 listaMemoria.RemoveAt(index);
                 ActualizarListaVisual();
                 LimpiarCampos();
             }
         }
 
-        // --- 4. GUARDAR EN DISCO ---
         private void BtnGuardarTodo_Click(object sender, EventArgs e)
         {
             try
             {
-                // 1. Crear Backup
+                // crea un Backup
                 gestor.CrearBackup(rutaArchivoActual);
 
-                // 2. Sobrescribir Original
+                // sobrescribe Original
                 gestor.GuardarArchivo(rutaArchivoActual, extensionActual, listaMemoria);
 
-                MessageBox.Show($"✅ Cambios guardados correctamente.\nSe creó un backup en: {rutaArchivoActual}.bak", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show($"Cambios guardados correctamente.\nSe creó un backup en: {rutaArchivoActual}.bak", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close();
             }
             catch (Exception ex)
@@ -143,14 +163,16 @@ namespace TramontiniSciacaluga_GestorAlumnos
             }
         }
 
-        // --- AUXILIARES ---
+
         private void ActualizarListaVisual()
         {
             lstAlumnos.Items.Clear();
+
             foreach (var alu in listaMemoria)
             {
                 lstAlumnos.Items.Add($"{alu.Legajo} - {alu.Apellido}, {alu.Nombre}");
             }
+
         }
 
         private void LimpiarCampos()
@@ -159,15 +181,44 @@ namespace TramontiniSciacaluga_GestorAlumnos
             txtDoc.Clear(); txtEmail.Clear(); txtTel.Clear();
         }
 
-        // CORRECCIÓN AQUÍ: Cambiamos "return;" por "return false;"
         private bool ValidarCampos()
         {
-            if (!Regex.IsMatch(txtLegajo.Text, @"^\d+$")) { MessageBox.Show("Legajo numérico requerido."); return false; }
-            if (string.IsNullOrWhiteSpace(txtApellido.Text)) { MessageBox.Show("Apellido requerido."); return false; }
-            if (string.IsNullOrWhiteSpace(txtNombre.Text)) { MessageBox.Show("Nombre requerido."); return false; }
-            if (!Regex.IsMatch(txtDoc.Text, @"^\d+$")) { MessageBox.Show("Documento numérico requerido."); return false; }
-            if (!Regex.IsMatch(txtEmail.Text, @"^[^@\s]+@[^@\s]+\.[^@\s]+$")) { MessageBox.Show("Email inválido."); return false; }
-            if (!Regex.IsMatch(txtTel.Text, @"^\d+$")) { MessageBox.Show("Teléfono numérico requerido."); return false; }
+            if (!Regex.IsMatch(txtLegajo.Text, @"^\d+$")) 
+            { 
+                MessageBox.Show("Legajo numérico requerido."); 
+                return false; 
+            }
+
+            if (string.IsNullOrWhiteSpace(txtApellido.Text)) 
+            { 
+                MessageBox.Show("Apellido requerido."); 
+                return false; 
+            }
+
+            if (string.IsNullOrWhiteSpace(txtNombre.Text)) 
+            { 
+                MessageBox.Show("Nombre requerido."); 
+                return false; 
+            }
+
+            if (!Regex.IsMatch(txtDoc.Text, @"^\d+$")) 
+            { 
+                MessageBox.Show("Documento numérico requerido."); 
+                return false; 
+            }
+
+            if (!Regex.IsMatch(txtEmail.Text, @"^[^@\s]+@[^@\s]+\.[^@\s]+$")) 
+            { 
+                MessageBox.Show("Email inválido."); 
+                return false; 
+            }
+
+            if (!Regex.IsMatch(txtTel.Text, @"^\d+$")) 
+            {
+                MessageBox.Show("Teléfono numérico requerido."); 
+                return false; 
+            }
+
             return true;
         }
     }
