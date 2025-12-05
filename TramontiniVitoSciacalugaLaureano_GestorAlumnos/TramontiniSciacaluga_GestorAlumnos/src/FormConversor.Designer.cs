@@ -22,165 +22,160 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            this.lblTitulo = new System.Windows.Forms.Label();
-            this.lblOrigen = new System.Windows.Forms.Label();
-            this.txtRutaOrigen = new System.Windows.Forms.TextBox();
-            this.btnSeleccionar = new System.Windows.Forms.Button();
-            this.lblOrigenInfo = new System.Windows.Forms.Label();
-            this.lblTitulo2 = new System.Windows.Forms.Label();
-            this.lblFormatoDestino = new System.Windows.Forms.Label();
-            this.cmbDestino = new System.Windows.Forms.ComboBox();
-            this.lblNombreDestino = new System.Windows.Forms.Label();
-            this.txtNombreDestino = new System.Windows.Forms.TextBox();
-            this.btnConvertir = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            lblTitulo = new Label();
+            lblNombreOrigen = new Label();
+            txtNombreArchivoOrigen = new TextBox();
+            btnCargar = new Button();
+            lblOrigenInfo = new Label();
+            lblTitulo2 = new Label();
+            lblFormatoDestino = new Label();
+            cmbDestino = new ComboBox();
+            lblNombreDestino = new Label();
+            txtNombreDestino = new TextBox();
+            btnConvertir = new Button();
+            SuspendLayout();
             // 
             // lblTitulo
             // 
-            this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTitulo.Location = new System.Drawing.Point(20, 20);
-            this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(167, 15);
-            this.lblTitulo.TabIndex = 0;
-            this.lblTitulo.Text = "1. Archivo de Origen (Fuente)";
+            lblTitulo.AutoSize = true;
+            lblTitulo.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lblTitulo.Location = new Point(20, 20);
+            lblTitulo.Name = "lblTitulo";
+            lblTitulo.Size = new Size(121, 15);
+            lblTitulo.TabIndex = 0;
+            lblTitulo.Text = "1. Archivo de Origen";
             // 
-            // lblOrigen
+            // lblNombreOrigen
             // 
-            this.lblOrigen.AutoSize = true;
-            this.lblOrigen.Location = new System.Drawing.Point(20, 50);
-            this.lblOrigen.Name = "lblOrigen";
-            this.lblOrigen.Size = new System.Drawing.Size(51, 15);
-            this.lblOrigen.TabIndex = 1;
-            this.lblOrigen.Text = "Archivo:";
+            lblNombreOrigen.AutoSize = true;
+            lblNombreOrigen.Location = new Point(20, 50);
+            lblNombreOrigen.Name = "lblNombreOrigen";
+            lblNombreOrigen.Size = new Size(108, 15);
+            lblNombreOrigen.TabIndex = 1;
+            lblNombreOrigen.Text = "Nombre completo:";
             // 
-            // txtRutaOrigen
+            // txtNombreArchivoOrigen
             // 
-            this.txtRutaOrigen.Enabled = false;
-            this.txtRutaOrigen.Location = new System.Drawing.Point(80, 47);
-            this.txtRutaOrigen.Name = "txtRutaOrigen";
-            this.txtRutaOrigen.ReadOnly = true;
-            this.txtRutaOrigen.Size = new System.Drawing.Size(350, 23);
-            this.txtRutaOrigen.TabIndex = 2;
-            this.txtRutaOrigen.Text = "No hay archivo seleccionado...";
+            txtNombreArchivoOrigen.Location = new Point(130, 47);
+            txtNombreArchivoOrigen.Name = "txtNombreArchivoOrigen";
+            txtNombreArchivoOrigen.PlaceholderText = "Ej: alumnos_prueba.csv";
+            txtNombreArchivoOrigen.Size = new Size(300, 23);
+            txtNombreArchivoOrigen.TabIndex = 2;
             // 
-            // btnSeleccionar
+            // btnCargar
             // 
-            this.btnSeleccionar.BackColor = System.Drawing.Color.LightBlue;
-            this.btnSeleccionar.Location = new System.Drawing.Point(440, 46);
-            this.btnSeleccionar.Name = "btnSeleccionar";
-            this.btnSeleccionar.Size = new System.Drawing.Size(130, 25);
-            this.btnSeleccionar.TabIndex = 3;
-            this.btnSeleccionar.Text = "Seleccionar Archivo";
-            this.btnSeleccionar.UseVisualStyleBackColor = false;
-//            this.btnSeleccionar.Click += new System.EventHandler(this.BtnSeleccionar_Click);
+            btnCargar.BackColor = Color.LightBlue;
+            btnCargar.Location = new Point(440, 46);
+            btnCargar.Name = "btnCargar";
+            btnCargar.Size = new Size(130, 25);
+            btnCargar.TabIndex = 3;
+            btnCargar.Text = "Cargar y Validar";
+            btnCargar.UseVisualStyleBackColor = false;
+            btnCargar.Click += BtnCargar_Click;
             // 
             // lblOrigenInfo
             // 
-            this.lblOrigenInfo.AutoSize = true;
-            this.lblOrigenInfo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.lblOrigenInfo.Location = new System.Drawing.Point(20, 80);
-            this.lblOrigenInfo.Name = "lblOrigenInfo";
-            this.lblOrigenInfo.Size = new System.Drawing.Size(121, 15);
-            this.lblOrigenInfo.TabIndex = 4;
-            this.lblOrigenInfo.Text = "No hay archivo cargado.";
+            lblOrigenInfo.AutoSize = true;
+            lblOrigenInfo.Font = new Font("Segoe UI", 9F, FontStyle.Italic);
+            lblOrigenInfo.Location = new Point(20, 80);
+            lblOrigenInfo.Name = "lblOrigenInfo";
+            lblOrigenInfo.Size = new Size(135, 15);
+            lblOrigenInfo.TabIndex = 4;
+            lblOrigenInfo.Text = "No hay archivo cargado.";
             // 
             // lblTitulo2
             // 
-            this.lblTitulo2.AutoSize = true;
-            this.lblTitulo2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTitulo2.Location = new System.Drawing.Point(20, 140);
-            this.lblTitulo2.Name = "lblTitulo2";
-            this.lblTitulo2.Size = new System.Drawing.Size(137, 15);
-            this.lblTitulo2.TabIndex = 5;
-            this.lblTitulo2.Text = "2. Configuración Final";
+            lblTitulo2.AutoSize = true;
+            lblTitulo2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lblTitulo2.Location = new Point(20, 140);
+            lblTitulo2.Name = "lblTitulo2";
+            lblTitulo2.Size = new Size(179, 15);
+            lblTitulo2.TabIndex = 5;
+            lblTitulo2.Text = "2. Configuración de Conversión";
             // 
             // lblFormatoDestino
             // 
-            this.lblFormatoDestino.AutoSize = true;
-            this.lblFormatoDestino.Location = new System.Drawing.Point(20, 175);
-            this.lblFormatoDestino.Name = "lblFormatoDestino";
-            this.lblFormatoDestino.Size = new System.Drawing.Size(103, 15);
-            this.lblFormatoDestino.TabIndex = 6;
-            this.lblFormatoDestino.Text = "Formato Destino:";
+            lblFormatoDestino.AutoSize = true;
+            lblFormatoDestino.Location = new Point(20, 175);
+            lblFormatoDestino.Name = "lblFormatoDestino";
+            lblFormatoDestino.Size = new Size(98, 15);
+            lblFormatoDestino.TabIndex = 6;
+            lblFormatoDestino.Text = "Formato Destino:";
             // 
             // cmbDestino
             // 
-            this.cmbDestino.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbDestino.Enabled = false;
-            this.cmbDestino.FormattingEnabled = true;
-            this.cmbDestino.Location = new System.Drawing.Point(130, 172);
-            this.cmbDestino.Name = "cmbDestino";
-            this.cmbDestino.Size = new System.Drawing.Size(100, 23);
-            this.cmbDestino.TabIndex = 7;
-            //this.cmbDestino.SelectedIndexChanged += new System.EventHandler(this.CmbDestino_SelectedIndexChanged);
+            cmbDestino.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbDestino.Enabled = false;
+            cmbDestino.FormattingEnabled = true;
+            cmbDestino.Location = new Point(130, 172);
+            cmbDestino.Name = "cmbDestino";
+            cmbDestino.Size = new Size(100, 23);
+            cmbDestino.TabIndex = 7;
+            cmbDestino.SelectedIndexChanged += CmbDestino_SelectedIndexChanged;
             // 
             // lblNombreDestino
             // 
-            this.lblNombreDestino.AutoSize = true;
-            this.lblNombreDestino.Location = new System.Drawing.Point(260, 175);
-            this.lblNombreDestino.Name = "lblNombreDestino";
-            this.lblNombreDestino.Size = new System.Drawing.Size(95, 15);
-            this.lblNombreDestino.TabIndex = 8;
-            this.lblNombreDestino.Text = "Nombre Archivo:";
+            lblNombreDestino.AutoSize = true;
+            lblNombreDestino.Location = new Point(260, 175);
+            lblNombreDestino.Name = "lblNombreDestino";
+            lblNombreDestino.Size = new Size(98, 15);
+            lblNombreDestino.TabIndex = 8;
+            lblNombreDestino.Text = "Nombre Archivo:";
             // 
             // txtNombreDestino
             // 
-            this.txtNombreDestino.Enabled = false;
-            this.txtNombreDestino.Location = new System.Drawing.Point(360, 172);
-            this.txtNombreDestino.Name = "txtNombreDestino";
-            this.txtNombreDestino.Size = new System.Drawing.Size(210, 23);
-            this.txtNombreDestino.TabIndex = 9;
-            this.txtNombreDestino.PlaceholderText = "Ej: nuevos_datos";
+            txtNombreDestino.Enabled = false;
+            txtNombreDestino.Location = new Point(360, 172);
+            txtNombreDestino.Name = "txtNombreDestino";
+            txtNombreDestino.PlaceholderText = "Ej: archivo_convertido (sin extensión)";
+            txtNombreDestino.Size = new Size(210, 23);
+            txtNombreDestino.TabIndex = 9;
             // 
             // btnConvertir
             // 
-            this.btnConvertir.BackColor = System.Drawing.Color.LightGreen;
-            this.btnConvertir.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnConvertir.Location = new System.Drawing.Point(20, 250);
-            this.btnConvertir.Name = "btnConvertir";
-            this.btnConvertir.Size = new System.Drawing.Size(550, 40);
-            this.btnConvertir.TabIndex = 10;
-            this.btnConvertir.Text = "🔁 CONVERTIR Y GUARDAR ARCHIVO";
-            this.btnConvertir.UseVisualStyleBackColor = false;
-            //this.btnConvertir.Click += new System.EventHandler(this.BtnConvertir_Click);
+            btnConvertir.BackColor = Color.LightGreen;
+            btnConvertir.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnConvertir.Location = new Point(20, 250);
+            btnConvertir.Name = "btnConvertir";
+            btnConvertir.Size = new Size(550, 40);
+            btnConvertir.TabIndex = 10;
+            btnConvertir.Text = "🔁 CONVERTIR Y GUARDAR ARCHIVO";
+            btnConvertir.UseVisualStyleBackColor = false;
+            btnConvertir.Click += BtnConvertir_Click;
             // 
-            // FormConvertir
+            // FormConversor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(590, 320);
-            this.Controls.Add(this.btnConvertir);
-            this.Controls.Add(this.txtNombreDestino);
-            this.Controls.Add(this.lblNombreDestino);
-            this.Controls.Add(this.cmbDestino);
-            this.Controls.Add(this.lblFormatoDestino);
-            this.Controls.Add(this.lblTitulo2);
-            this.Controls.Add(this.lblOrigenInfo);
-            this.Controls.Add(this.btnSeleccionar);
-            this.Controls.Add(this.txtRutaOrigen);
-            this.Controls.Add(this.lblOrigen);
-            this.Controls.Add(this.lblTitulo);
-            this.Name = "FormConvertir";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "5. Convertir Entre Formatos";
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ButtonShadow;
+            ClientSize = new Size(590, 320);
+            Controls.Add(btnConvertir);
+            Controls.Add(txtNombreDestino);
+            Controls.Add(lblNombreDestino);
+            Controls.Add(cmbDestino);
+            Controls.Add(lblFormatoDestino);
+            Controls.Add(lblTitulo2);
+            Controls.Add(lblOrigenInfo);
+            Controls.Add(btnCargar);
+            Controls.Add(txtNombreArchivoOrigen);
+            Controls.Add(lblNombreOrigen);
+            Controls.Add(lblTitulo);
+            Name = "FormConversor";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Convertir Entre Formatos";
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Label lblTitulo;
-        private System.Windows.Forms.Label lblOrigen;
-        private System.Windows.Forms.TextBox txtRutaOrigen;
-        private System.Windows.Forms.Button btnSeleccionar;
+        private System.Windows.Forms.Label lblNombreOrigen;
+        private System.Windows.Forms.TextBox txtNombreArchivoOrigen;
+        private System.Windows.Forms.Button btnCargar;
         private System.Windows.Forms.Label lblOrigenInfo;
         private System.Windows.Forms.Label lblTitulo2;
         private System.Windows.Forms.Label lblFormatoDestino;

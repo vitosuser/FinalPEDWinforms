@@ -3,15 +3,12 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
 using System.Xml.Serialization;
-// IMPORTANTE: Esto conecta con tu clase Alumno correcta
 using TramontiniSciacaluga_GestorAlumnos.Models;
 
-// IMPORTANTE: El namespace debe coincidir con tu proyecto
 namespace TramontiniSciacaluga_GestorAlumnos
 {
     public class GestorArchivos
     {
-        // === GESTIÓN DE BACKUPS ===
         public void CrearBackup(string rutaOriginal)
         {
             if (File.Exists(rutaOriginal))
@@ -21,7 +18,6 @@ namespace TramontiniSciacaluga_GestorAlumnos
             }
         }
 
-        // === GUARDADO ===
         public void GuardarArchivo(string rutaCompleta, string extension, List<Alumno> alumnos)
         {
             switch (extension.ToLower())
@@ -34,7 +30,6 @@ namespace TramontiniSciacaluga_GestorAlumnos
             }
         }
 
-        // === LECTURA ===
         public List<Alumno> LeerAlumnosDesdeArchivo(string extension, string rutaCompleta)
         {
             if (!File.Exists(rutaCompleta)) return new List<Alumno>();
@@ -57,7 +52,6 @@ namespace TramontiniSciacaluga_GestorAlumnos
             else throw new FileNotFoundException("Archivo no encontrado.");
         }
 
-        // === PRIVADOS (Motores de lectura/escritura) ===
         private void GuardarTxt(string ruta, List<Alumno> l)
         {
             using (StreamWriter w = new StreamWriter(ruta))

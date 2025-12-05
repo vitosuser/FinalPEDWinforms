@@ -1,6 +1,5 @@
 ﻿using System;
 
-// FORZAMOS este namespace para que todos lo encuentren fácil
 namespace TramontiniSciacaluga_GestorAlumnos.Models
 {
     public class Alumno
