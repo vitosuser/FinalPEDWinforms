@@ -1,0 +1,12 @@
+101|MARTINEZ|Ana María|30123456|ana.m@mail.com|1145678901
+102|PEREZ|Juan Luis|28987654|juan.perez@mail.com|1134567890
+103|LOPEZ|Laura Inés|35001234|laura.i@mail.com|1123456789
+104|RAMIREZ|Pedro José|41234567|pedro.j@mail.com|1156789012
+105|PEREZ|Sofía Belén|33555444|sofia.b@mail.com|1167890123
+106|MARTINEZ|Carlos E.|25888999|c.martinez@mail.com|1190123456
+107|GOMEZ|Eliana R.|38777666|eliana.r@mail.com|1178901234
+108|GOMEZ|Diego M.|42111222|diego.m@mail.com|1189012345
+109|LOPEZ|Martín F.|31444333|martin.f@mail.com|1165432109
+110|RAMIREZ|Valentina|43999888|valen.r@mail.com|1154321098
+111|SOSA|Facundo P.|37666555|facundo.p@mail.com|1122113344
+112|SOSA|Guadalupe|36333222|g.sosa@mail.com|1155667788

@@ -1,0 +1,98 @@
+[
+  {
+    "Legajo": "101",
+    "Apellido": "MARTINEZ",
+    "Nombre": "Ana Mar\u00EDa",
+    "Documento": "30123456",
+    "Email": "ana.m@mail.com",
+    "Telefono": "1145678901"
+  },
+  {
+    "Legajo": "102",
+    "Apellido": "PEREZ",
+    "Nombre": "Juan Luis",
+    "Documento": "28987654",
+    "Email": "juan.perez@mail.com",
+    "Telefono": "1134567890"
+  },
+  {
+    "Legajo": "103",
+    "Apellido": "LOPEZ",
+    "Nombre": "Laura In\u00E9s",
+    "Documento": "35001234",
+    "Email": "laura.i@mail.com",
+    "Telefono": "1123456789"
+  },
+  {
+    "Legajo": "104",
+    "Apellido": "RAMIREZ",
+    "Nombre": "Pedro Jos\u00E9",
+    "Documento": "41234567",
+    "Email": "pedro.j@mail.com",
+    "Telefono": "1156789012"
+  },
+  {
+    "Legajo": "105",
+    "Apellido": "PEREZ",
+    "Nombre": "Sof\u00EDa Bel\u00E9n",
+    "Documento": "33555444",
+    "Email": "sofia.b@mail.com",
+    "Telefono": "1167890123"
+  },
+  {
+    "Legajo": "106",
+    "Apellido": "MARTINEZ",
+    "Nombre": "Carlos E.",
+    "Documento": "25888999",
+    "Email": "c.martinez@mail.com",
+    "Telefono": "1190123456"
+  },
+  {
+    "Legajo": "107",
+    "Apellido": "GOMEZ",
+    "Nombre": "Eliana R.",
+    "Documento": "38777666",
+    "Email": "eliana.r@mail.com",
+    "Telefono": "1178901234"
+  },
+  {
+    "Legajo": "108",
+    "Apellido": "GOMEZ",
+    "Nombre": "Diego M.",
+    "Documento": "42111222",
+    "Email": "diego.m@mail.com",
+    "Telefono": "1189012345"
+  },
+  {
+    "Legajo": "109",
+    "Apellido": "LOPEZ",
+    "Nombre": "Mart\u00EDn F.",
+    "Documento": "31444333",
+    "Email": "martin.f@mail.com",
+    "Telefono": "1165432109"
+  },
+  {
+    "Legajo": "110",
+    "Apellido": "RAMIREZ",
+    "Nombre": "Valentina",
+    "Documento": "43999888",
+    "Email": "valen.r@mail.com",
+    "Telefono": "1154321098"
+  },
+  {
+    "Legajo": "111",
+    "Apellido": "SOSA",
+    "Nombre": "Facundo P.",
+    "Documento": "37666555",
+    "Email": "facundo.p@mail.com",
+    "Telefono": "1122113344"
+  },
+  {
+    "Legajo": "112",
+    "Apellido": "SOSA",
+    "Nombre": "Guadalupe",
+    "Documento": "36333222",
+    "Email": "g.sosa@mail.com",
+    "Telefono": "1155667788"
+  }
+]
