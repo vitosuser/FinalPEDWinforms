@@ -4,12 +4,12 @@ namespace TramontiniSciacaluga_GestorAlumnos.Models
 {
     public class Alumno
     {
-        public string Legajo { get; set; }
-        public string Apellido { get; set; }
-        public string Nombre { get; set; }
-        public string Documento { get; set; }
-        public string Email { get; set; }
-        public string Telefono { get; set; }
+        public string Legajo { get; set; } = null!;
+        public string Apellido { get; set; } = null!;
+        public string Nombre { get; set; } = null!;
+        public string Documento { get; set; } = null!;
+        public string Email { get; set; } = null!;
+        public string Telefono { get; set; } = null!;
 
         public Alumno() { }
 

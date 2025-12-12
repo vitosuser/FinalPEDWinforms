@@ -81,7 +81,7 @@ namespace TramontiniSciacaluga_GestorAlumnos
             try
             {
                 string nombre = txtNombreArchivo.Text;
-                string ext = "." + cmbFormato.SelectedItem.ToString().ToLower();
+                string ext = "." + cmbFormato.SelectedItem!.ToString()!.ToLower();
                 string ruta = Path.Combine(Environment.CurrentDirectory, nombre + ext);
 
                 // Llamamos al gestor para que guarde en disco

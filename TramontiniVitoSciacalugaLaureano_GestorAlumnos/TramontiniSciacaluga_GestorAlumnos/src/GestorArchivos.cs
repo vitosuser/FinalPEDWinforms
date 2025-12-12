@@ -99,7 +99,14 @@ namespace TramontiniSciacaluga_GestorAlumnos
         private List<Alumno> LeerXml(string r)
         {
             XmlSerializer s = new XmlSerializer(typeof(List<Alumno>), new XmlRootAttribute("Alumnos"));
-            using (StreamReader sr = new StreamReader(r)) return (List<Alumno>)s.Deserialize(sr);
+
+            using (StreamReader sr = new StreamReader(r))
+            {
+                object? result = s.Deserialize(sr);
+
+                return (result as List<Alumno>) ?? new List<Alumno>();
+            } 
+
         }
     }
 }

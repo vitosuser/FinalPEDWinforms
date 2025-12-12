@@ -14,7 +14,7 @@ namespace TramontiniSciacaluga_GestorAlumnos.src
     public partial class FormConversor : Form
     {
         private GestorArchivos gestor = new GestorArchivos();
-        private List<Alumno> listaAlumnos = null;
+        private List<Alumno>? listaAlumnos = null;
         private string extOrigen = string.Empty;
         private string rutaOrigen = string.Empty;
 
@@ -156,7 +156,7 @@ namespace TramontiniSciacaluga_GestorAlumnos.src
                 return;
             }
 
-            string extDestino = "." + cmbDestino.SelectedItem.ToString().ToLower();
+            string extDestino = "." + cmbDestino.SelectedItem!.ToString()!.ToLower();
             string rutaDestino = Path.Combine(Environment.CurrentDirectory, nombreDestino + extDestino);
 
             // Evita sobrescribir el archivo de origen con el mismo nombre y extensión
@@ -206,7 +206,7 @@ namespace TramontiniSciacaluga_GestorAlumnos.src
         {
             if (cmbDestino.SelectedIndex != -1)
             {
-                string ext = cmbDestino.SelectedItem.ToString().ToLower();
+                string ext = cmbDestino.SelectedItem!.ToString()!.ToLower();
 
                 // Obtenemos el nombre base del archivo de origen para sugerir un nombre de destino
                 string nombreBaseOrigen = Path.GetFileNameWithoutExtension(txtNombreArchivoOrigen.Text.Trim());

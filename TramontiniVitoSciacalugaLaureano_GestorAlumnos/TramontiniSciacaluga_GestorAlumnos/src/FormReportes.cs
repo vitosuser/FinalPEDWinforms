@@ -15,7 +15,7 @@ namespace TramontiniSciacaluga_GestorAlumnos.src
     {
         private GestorArchivos gestor = new GestorArchivos();
         private GeneradorReportes generador = new GeneradorReportes();
-        private List<Alumno> listaAlumnos = null;
+        private List<Alumno>? listaAlumnos = null;
         private string reporteGenerado = string.Empty;
 
         public FormReportes()
