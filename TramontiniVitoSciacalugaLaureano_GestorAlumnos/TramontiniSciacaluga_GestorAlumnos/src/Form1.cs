@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
 using TramontiniSciacaluga_GestorAlumnos.Models;
@@ -63,5 +64,23 @@ namespace TramontiniSciacaluga_GestorAlumnos
             reportes.Show();
         }
 
+        private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            const string readmeArchivo = "README.md";
+
+            
+            string readmePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, readmeArchivo);
+
+            try
+            {
+
+               Process.Start(new ProcessStartInfo(readmePath) { UseShellExecute = true });
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al intentar abrir el archivo: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

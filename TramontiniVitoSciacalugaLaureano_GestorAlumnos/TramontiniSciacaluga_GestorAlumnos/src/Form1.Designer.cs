@@ -29,13 +29,12 @@
             convertirFormatosToolStripMenuItem = new ToolStripMenuItem();
             reportesToolStripMenuItem = new ToolStripMenuItem();
             generarReporteToolStripMenuItem = new ToolStripMenuItem();
-            acercaDeToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { archivoToolStripMenuItem, herramientasToolStripMenuItem, reportesToolStripMenuItem, acercaDeToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { archivoToolStripMenuItem, herramientasToolStripMenuItem, reportesToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 24);
@@ -126,18 +125,10 @@
             // 
             generarReporteToolStripMenuItem.AutoToolTip = true;
             generarReporteToolStripMenuItem.Name = "generarReporteToolStripMenuItem";
-            generarReporteToolStripMenuItem.Size = new Size(180, 22);
+            generarReporteToolStripMenuItem.Size = new Size(159, 22);
             generarReporteToolStripMenuItem.Text = "Generar Reporte";
             generarReporteToolStripMenuItem.ToolTipText = "Genera un reporte agrupado por un campo específico (Apellido) con subtotales y formato profesional.";
             generarReporteToolStripMenuItem.Click += generarReporteToolStripMenuItem_Click;
-            // 
-            // acercaDeToolStripMenuItem
-            // 
-            acercaDeToolStripMenuItem.Alignment = ToolStripItemAlignment.Right;
-            acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            acercaDeToolStripMenuItem.RightToLeft = RightToLeft.No;
-            acercaDeToolStripMenuItem.Size = new Size(72, 20);
-            acercaDeToolStripMenuItem.Text = "Acerca De";
             // 
             // Form1
             // 
@@ -170,6 +161,5 @@
         private System.Windows.Forms.ToolStripMenuItem convertirFormatosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem generarReporteToolStripMenuItem;
-        private ToolStripMenuItem acercaDeToolStripMenuItem;
     }
 }
